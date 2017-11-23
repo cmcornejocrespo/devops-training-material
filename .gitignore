@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/devops-training-material.iml
+/jenkins/.vagrant/
+/jenkins/ubuntu-xenial-16.04-cloudimg-console.log

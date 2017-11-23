@@ -1,0 +1,44 @@
+node {
+
+stage('Preparation') { // for display purposes
+    echo("Preparation successfully run");
+   }
+   stage('Build') {
+      // Run the maven build
+      echo("Build successfully run");
+   }
+
+   stage('Run unit tests') {
+	// Run the maven test
+      echo("unit tests successfully run");
+   }
+
+   stage('Run Sonar reports') {
+	// Run the maven test
+      echo("Sonar reports successfully run");
+   }
+   stage('Run Integration Tests') {
+      // Run integration tests
+      echo("Integration Tests successfully run");
+   }
+   stage('Create Docker Image and Push to Registry') {
+	// Run the maven test
+      echo("Create Docker Image and Push to Registry successfully run");
+   }
+   stage('Deploy to Integration Environment') {
+	// Run the maven test
+      echo("Deploy to Integration Environment successfully run");
+   }
+   stage('Run e2e Tests') {
+	// Run the maven test
+      echo("e2e Tests successfully run");
+   }
+   stage('Deploy to Nexus') {
+	// Run the maven test
+      echo("Deploy to Nexus successfully run");
+   }
+   stage('Results') {
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archive 'target/*.jar'
+   }
+}
