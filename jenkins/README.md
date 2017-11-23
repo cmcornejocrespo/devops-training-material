@@ -55,10 +55,11 @@ Jenkins folder containes jenkins-related material
 
 ## Run previous examples using Blue Ocean UI
 
-- [Getting Started with Blue Ocean](https://jenkins.io/doc/book/blueocean/getting-started/)    
+- [Getting Started with Blue Ocean](https://jenkins.io/doc/book/blueocean/getting-started/)
 
 ### References
 - [Installing Jenkins](https://jenkins.io/doc/book/installing/)
 - [Getting started with Jenkins](https://jenkins.io/download/) 
 - [Getting Started with Pipeline](https://jenkins.io/doc/book/pipeline/getting-started/#getting-started-with-pipeline) 
 - [Pipeline Examples](https://jenkins.io/doc/pipeline/examples/#pipeline-examples) 
+- [Blue Ocean Pipeline Editor](https://github.com/jenkinsci/blueocean-plugin/tree/master/blueocean-pipeline-editor)
