@@ -1,9 +1,9 @@
 # Jenkins
-Jenkins folder containes jenkins-related material
+Jenkins folder containing jenkins-related material
 
 ## Requirements
 - Github account
-- Run Jenkins via docker
+- Run Jenkins via [docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
     - Via Vagrant
     ```sh
     $ vagrant up
