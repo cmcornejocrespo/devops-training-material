@@ -1,0 +1,59 @@
+version: "2"
+services:
+  rng:
+    build: rng
+    hostname: rng
+    ports:
+    - "8001:80"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12202
+        tag: tag-rng
+    networks:
+      - docker-coins
+  hasher:
+    build: hasher
+    hostname: hasher
+    ports:
+    - "8002:80"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12202
+        tag: tag-hasher
+    networks:
+      - docker-coins
+  webui:
+    build: webui
+    ports:
+    - "8000:80"
+    volumes:
+    - "./webui/files/:/files/"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12202
+        tag: tag-webui
+    networks:
+      - docker-coins
+  redis:
+    image: redis
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12202
+        tag: tag-redis
+    networks:
+      - docker-coins
+  worker:
+    build: worker
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12202
+        tag: tag-worker
+    networks:
+      - docker-coins
+networks:
+  - docker-coins

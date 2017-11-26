@@ -17,3 +17,6 @@ Ansible folder containing ansible-related material#
 
 ## Terraform
 Terraform folder containing terraform-related material
+
+## Graylog
+Graylog folder containing graylog-related material

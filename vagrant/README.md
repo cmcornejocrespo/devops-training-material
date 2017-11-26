@@ -1,7 +1,7 @@
 # Vagrant
 
 ## Requirements
-- [Install Vagrant](https://www.vagrantup.com/downloads.html)
+- [Vagrant](https://www.vagrantup.com/downloads.html)
 
 ## Project setup
 ```sh
