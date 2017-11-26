@@ -7,3 +7,4 @@
 ## Examples
 - Using Ansible to configure jboss stack and deploy test app
 - Using Ansible to configure wordpress stack
+- Run Ansible to provision EC2 instance in AWS

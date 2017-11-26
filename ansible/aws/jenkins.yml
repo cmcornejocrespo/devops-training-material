@@ -1,0 +1,11 @@
+- hosts: ubuntu-aws
+  gather_facts: False
+  become: true
+
+  tasks:
+    - name: Install docker
+      shell: curl -sSL https://get.docker.com/ | sh
+    - name: Add user to docker group
+      user: name=ubuntu groups=docker append=yes
+    - name: Start Jenkins
+      command: docker run -d -p 8080:8080 --name jenkins jenkinsci/blueocean

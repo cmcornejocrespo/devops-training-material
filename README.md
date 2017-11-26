@@ -12,8 +12,11 @@ Makes a comprehensive review of docker features, including first steps, networki
 ## Vagrant
 Vagrant folder containing vagrant-related material
 
+## AWS
+AWS folder containing AWS-related material
+
 ## Ansible
-Ansible folder containing ansible-related material#
+Ansible folder containing ansible-related material
 
 ## Terraform
 Terraform folder containing terraform-related material

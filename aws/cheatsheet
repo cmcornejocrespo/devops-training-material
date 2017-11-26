@@ -1,0 +1,5 @@
+sudo -i
+apt install -y curl
+echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+curl -sSL https://get.docker.com/ | sh
+usermod -aG docker $USER

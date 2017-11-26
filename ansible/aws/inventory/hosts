@@ -1,0 +1,4 @@
+[ubuntu-aws]
+ec2-35-177-88-190.eu-west-2.compute.amazonaws.com
+[ubuntu-aws:vars]
+ansible_python_interpreter=/usr/bin/python3
