@@ -1,0 +1,5 @@
+sudo apt install python -y
+wget -N https://bootstrap.pypa.io/get-pip.py
+python get-pip.py --user
+pip install ansible==2.4.1.0
+pip install ansible==2.4.1.0

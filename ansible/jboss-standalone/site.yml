@@ -1,0 +1,7 @@
+---
+# This playbook deploys a simple standalone JBoss server.
+
+- hosts: all
+  become: true
+  roles:
+    - jboss-standalone

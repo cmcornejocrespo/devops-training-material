@@ -1,0 +1,18 @@
+# Show account details
+az account show --query "{subscriptionId:id, tenantId:tenantId}"
+{
+  "subscriptionId": "XX-XX-XX-XX-XX",
+  "tenantId": "YY-YY-YY-YY-YY"
+}
+
+# Create Role Contributor
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/XX-XX-XX-XX-XX"
+{
+  "appId": "XX-XX-XX-XX-XX",
+  "displayName": "azure-cli-2017-11-20-19-20-06",
+  "name": "http://azure-cli-2017-11-20-19-20-06",
+  "password": "ZZZ-ZZZ-ZZZ-ZZZ-ZZZ",
+  "tenant": "YY-YY-YY-YY-YY"
+}
+
+terraform plan -var azure_client_id=blah-blah -var azure_tenant_id=blah-blah -var azure_client_secret=blah-blah -var azure_subscription_id=blah-blah

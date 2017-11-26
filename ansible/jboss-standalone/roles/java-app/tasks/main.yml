@@ -1,0 +1,20 @@
+---
+- name: Copy application WAR file to host
+  copy: src={{ hello_world_war }}
+        dest=/tmp
+
+- name: Deploy HelloWorld to JBoss
+  jboss: deploy_path={{ deploy_path }}
+         src=/tmp/{{ hello_world_war }}
+         deployment={{ hello_world_war }}
+         state=present
+  
+- name: Copy application WAR file to host
+  copy: src={{ ticket_monster_war }}
+        dest=/tmp
+
+- name: Deploy Ticket Monster to JBoss
+  jboss: deploy_path={{ deploy_path }}
+         src=/tmp/{{ ticket_monster_war }}
+         deployment={{ ticket_monster_war }}
+         state=present
