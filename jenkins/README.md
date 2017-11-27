@@ -41,7 +41,7 @@ Jenkins folder containing jenkins-related material
 
 ## Running a pipeline example as pipeline project with real code
 
-- Create Pipeline job: Jenkins >> New Item >> pipeline-example-three >> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/atSistemas/devops-training-material/blob/master/jenkins/Jenkinsfile)
+- Create Pipeline job: Jenkins >> New Item >> pipeline-example-three >> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/cmcornejocrespo/devops-training-material/blob/develop/jenkins/Jenkinsfile)
 
 ## Running a pipeline example as CI/CD pipeline project
 
