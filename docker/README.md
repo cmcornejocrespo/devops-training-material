@@ -12,7 +12,7 @@ Docker folder containing docker-related material
     ```
 - [Play with Docker](https://labs.play-with-docker.com/)
 ## Docker get started guide
-- [Part 1: Orientation and setup](https://docs.docker.com/get-started/)
+- [Part 1: Orientation and setup](https://docs.docker.com/get-started/#setup)
 - [Network containers](https://docs.docker.com/engine/tutorials/networkingcontainers/)
 - [Use volumes](https://docs.docker.com/engine/admin/volumes/volumes/)
 - [Part 2: Containers](https://docs.docker.com/get-started/part2/)
