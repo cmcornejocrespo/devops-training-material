@@ -45,7 +45,7 @@ Jenkins folder containing jenkins-related material
 
 ## Running a pipeline example as CI/CD pipeline project
 
-- Create Pipeline job: Jenkins >> New Item >> pipeline-example-ci-cd>> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/atSistemas/devops-training-material/blob/master/jenkins/Jenkinsfile.complete.pipeline)
+- Create Pipeline job: Jenkins >> New Item >> pipeline-example-ci-cd>> Pipeline job >> Ok >> Pipeline script >> Copy and paste [Jenkinsfile provided](https://github.com/cmcornejocrespo/devops-training-material/blob/develop/jenkins/Jenkinsfile.complete.pipeline)
 
 ## Creating your first Multibranch Pipeline project
 
