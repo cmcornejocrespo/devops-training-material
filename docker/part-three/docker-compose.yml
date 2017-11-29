@@ -2,9 +2,9 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: cmcornejocrespo/docker-get-started:latest
+    image: cmcornejocrespo/friendlyhello:latest
     deploy:
-      replicas: 10
+      replicas: 5
       resources:
         limits:
           cpus: "0.1"
