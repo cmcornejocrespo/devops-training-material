@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        sh 'ruby --version'
+        echo 'checkout'
       }
     }
     stage('Build') {
       parallel {
         stage('') {
           steps {
-            sh 'test'
+            echo 'build'
           }
         }
         stage('iOS') {
@@ -42,7 +42,7 @@ pipeline {
     }
     stage('Static Analysis') {
       parallel {
-        stage('') {
+        stage('error') {
           steps {
             echo 'dede'
           }
@@ -76,7 +76,7 @@ pipeline {
     }
     stage('Deploy Nexus') {
       parallel {
-        stage('') {
+        stage('error') {
           steps {
             echo 'dedede'
           }
@@ -111,12 +111,6 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'frfrfr'
-      }
-    }
-    stage('End') {
-      agent any
-      steps {
-        error 'fjghf'
       }
     }
   }
