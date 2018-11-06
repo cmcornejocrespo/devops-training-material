@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       parallel {
-        stage('') {
+        stage('PHP') {
           steps {
             echo 'build'
           }
@@ -33,16 +33,11 @@ pipeline {
             echo 'gt'
           }
         }
-        stage('PHP') {
-          steps {
-            echo 'gtgt'
-          }
-        }
       }
     }
     stage('Static Analysis') {
       parallel {
-        stage('error') {
+        stage('PHP') {
           steps {
             echo 'dede'
           }
@@ -67,16 +62,11 @@ pipeline {
             echo 'dedde'
           }
         }
-        stage('PHP') {
-          steps {
-            echo 'xsxs'
-          }
-        }
       }
     }
     stage('Deploy Nexus') {
       parallel {
-        stage('error') {
+        stage('PHP') {
           steps {
             echo 'dedede'
           }
@@ -99,11 +89,6 @@ pipeline {
         stage('.Net') {
           steps {
             echo 'cdcdcd'
-          }
-        }
-        stage('PHP') {
-          steps {
-            echo 'frfr'
           }
         }
       }
