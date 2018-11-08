@@ -6,7 +6,7 @@ pipeline {
         echo 'checkout'
       }
     }
-    stage('Build') {
+    stage('Test Unitarios') {
       parallel {
         stage('PHP') {
           steps {
@@ -35,7 +35,7 @@ pipeline {
         }
       }
     }
-    stage('Static Analysis') {
+    stage('Análisis Estático') {
       parallel {
         stage('PHP') {
           steps {
@@ -94,8 +94,32 @@ pipeline {
       }
     }
     stage('Deploy') {
-      steps {
-        echo 'frfrfr'
+      parallel {
+        stage('PHP') {
+          steps {
+            echo 'frfrfr'
+          }
+        }
+        stage('iOS') {
+          steps {
+            echo 'ios'
+          }
+        }
+        stage('Android') {
+          steps {
+            echo 'dd'
+          }
+        }
+        stage('Java') {
+          steps {
+            echo 'sss'
+          }
+        }
+        stage('.Net') {
+          steps {
+            echo 'ddd'
+          }
+        }
       }
     }
   }
