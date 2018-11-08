@@ -35,7 +35,7 @@ pipeline {
         }
       }
     }
-    stage('Análisis Estático') {
+    stage('Analisis Estatico') {
       parallel {
         stage('PHP') {
           steps {
