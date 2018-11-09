@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test Unitarios') {
       parallel {
-        stage('PHP') {
+        stage('Drupal') {
           steps {
             echo 'build'
           }
@@ -37,7 +37,7 @@ pipeline {
     }
     stage('Analisis Estatico') {
       parallel {
-        stage('PHP') {
+        stage('Drupal') {
           steps {
             echo 'dede'
           }
@@ -66,7 +66,7 @@ pipeline {
     }
     stage('Deploy Nexus') {
       parallel {
-        stage('PHP') {
+        stage('Drupal') {
           steps {
             echo 'dedede'
           }
@@ -95,7 +95,7 @@ pipeline {
     }
     stage('Deploy') {
       parallel {
-        stage('PHP') {
+        stage('Drupal') {
           steps {
             echo 'frfrfr'
           }
