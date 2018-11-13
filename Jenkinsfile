@@ -28,11 +28,6 @@ pipeline {
             echo 'efe'
           }
         }
-        stage('.Net') {
-          steps {
-            echo 'gt'
-          }
-        }
       }
     }
     stage('Analisis Estatico') {
@@ -55,11 +50,6 @@ pipeline {
         stage('Java') {
           steps {
             echo 'dedede'
-          }
-        }
-        stage('.Net') {
-          steps {
-            echo 'dedde'
           }
         }
       }
@@ -86,11 +76,6 @@ pipeline {
             echo 'cddccd'
           }
         }
-        stage('.Net') {
-          steps {
-            echo 'cdcdcd'
-          }
-        }
       }
     }
     stage('Deploy') {
@@ -113,11 +98,6 @@ pipeline {
         stage('Java') {
           steps {
             echo 'sss'
-          }
-        }
-        stage('.Net') {
-          steps {
-            echo 'ddd'
           }
         }
       }
