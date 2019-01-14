@@ -27,7 +27,7 @@
       stage('Results') {
         steps {
           junit '**/target/surefire-reports/TEST-*.xml'
-          archive 'target/*.jar'
+          archiveArtifacts 'bat-desk-common/target/*.jar'
         }
       }
     }
