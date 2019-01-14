@@ -19,7 +19,7 @@ Jenkins folder containing jenkins-related material
         -v "$HOME":/home \
         jenkinsci/blueocean
     ```  
-- Run Jenkins [standalone](http://mirrors.seville-jam.es/jenkins/war-stable/2.73.3/jenkins.war)
+- Run Jenkins [standalone](http://mirrors.jenkins.io/war-stable/latest/jenkins.war)
    ```sh
     $ java -jar jenkins.war
     ``` 
@@ -31,13 +31,21 @@ Jenkins folder containing jenkins-related material
 
 ## Creating your first Pipeline
 
-- Create Pipeline job: Jenkins >> New Item >> pipeline-example-one >> Pipeline job >> Ok >> Pipeline script >> Try example "Hello World"
+- Create Pipeline job: Jenkins >> New Item >> pipeline-example-one >> Pipeline job >> Ok >> Pipeline script >> 
+ ```yaml
+    node { 
+        stage('Stage 1') {
+            echo 'Hello World' 
+        }
+    }
+``` 
 
 ## Running a pipeline example as pipeline project
 
 - Create Pipeline job: Jenkins >> New Item >> pipeline-example-two >> Pipeline job >> Ok >> Pipeline script >> Try example "Github+Maven"
 - fix error M3 and re-run
 - Setup Maven: Manage Jenkins >> Global Tool Configuration >> Add Maven >> maven(M3) >>  Install automatically >> Save
+- Fix archive deprecated error :: archiveArtifacts
 
 ## Running a pipeline example as pipeline project with real code
 
