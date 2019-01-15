@@ -1,3 +1,6 @@
+docker-compose -f docker-compose.single.yml up
+
+docker swarm init
 docker stack ls                                            # List stacks or apps
 docker stack deploy -c docker-compose.yml getstartedlab  # Run the specified Compose file
 docker service ls                 # List running services associated with an app

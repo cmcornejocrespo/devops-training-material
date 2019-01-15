@@ -4,6 +4,7 @@ Docker folder containing docker-related material
 ## Requirements
 - [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 - [Docker](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/), [Docker compose](https://github.com/docker/compose/releases) and [Docker Machine](https://docs.docker.com/machine/install-machine/#installing-machine-directly) installed
+- [Docker Hub](https://hub.docker.com/)
 - [Vagrant](https://www.vagrantup.com/downloads.html)
 - Via Vagrant (don't have docker machine support)
     ```sh

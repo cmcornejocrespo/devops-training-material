@@ -1,0 +1,13 @@
+https://labs.play-with-docker.com/
+
+docker swarm init --advertise-addr IP # Set up your swarm. Change your IP
+docker node ls         # List the nodes in your swarm
+docker swarm join-token -q worker   # View join token
+docker swarm join --token <TOKEN> <IP>:2377
+docker node ls                # View nodes in swarm (while logged on to manager)
+vi docker-compose.yml
+:set paste
+docker stack deploy -c docker-compose.yml getstartedlab  # Deploy an app; command shell must be set to talk to manager (myvm1), uses local Compose file
+docker stack ps getstartedlab
+docker stack deploy # make replica changes
+docker stack rm getstartedlab  
