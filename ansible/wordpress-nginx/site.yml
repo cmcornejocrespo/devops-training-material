@@ -1,7 +1,11 @@
 ---
-- name: Install WordPress, MySQL, Nginx, and PHP-FPM
+- name: Install WordPress, MySQL, Nginx, PHP-FPM and netfilter rules
   hosts: all
-  become: yes
+  become: true
+  gather_facts: no
+  pre_tasks:
+    - name: 'Install python2'
+      raw: apt-get -y install python
   roles:
     - common
     - mysql

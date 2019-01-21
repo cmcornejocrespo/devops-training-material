@@ -1,5 +1,0 @@
-mysql_dependencies:
-  - mysql-server
-  - MySQL-python
-  - libselinux-python
-  - libsemanage-python

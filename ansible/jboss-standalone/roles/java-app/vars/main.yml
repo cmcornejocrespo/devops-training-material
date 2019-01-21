@@ -1,3 +1,0 @@
-deploy_path: /usr/share/jboss-as/standalone/deployments/
-hello_world_war: helloworld.war
-ticket_monster_war: ticket-monster.war
