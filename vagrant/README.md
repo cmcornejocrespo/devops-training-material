@@ -17,15 +17,15 @@ Vagrant uses a base image to quickly clone a virtual machine. These base images 
 ### Installing a Box
 
 ```sh
-    $ vagrant box add hashicorp/precise64
+    $ vagrant box add generic/ubuntu1804
 ```
-This will download the box named "hashicorp/precise64" from HashiCorp's Vagrant Cloud box [catalog](https://vagrantcloud.com/boxes/search), a place where you can find and host boxes.
+This will download the box named "generic/ubuntu1804" from HashiCorp's Vagrant Cloud box [catalog](https://vagrantcloud.com/boxes/search), a place where you can find and host boxes.
 
 ### Using a Box
 
 ```sh
     Vagrant.configure("2") do |config|
-      config.vm.box = "hashicorp/precise64"
+      config.vm.box = "generic/ubuntu1804"
     end
 ```
 
